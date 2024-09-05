@@ -180,6 +180,7 @@ const createTables = async () => {
       ('Linne Calodo','3030 Vineyard Dr, Paso Robles, CA', '805-227-0797', '10:00Am -5:00 PM', 'Linne Calodo Winery, located in Paso Robles, California, is known for producing innovative, small-batch Rhône-style blends and Zinfandels that emphasize the unique terroir of the region.', 'https://pults.com/wp-content/uploads/2012/10/Linne_Calodo_Winery_Main_Entrance1.jpg','linnecalodo.com', True, 7),
       
 ('Tooth & Nail', '3090 Anderson Rd, Paso Robles, CA','805-369-6100','10:00 AM - 6:00 PM', 'Tooth & Nail Winery in Paso Robles is a unique winery famed for its bold, artfully blended wines and its castle-like tasting room offering an immersive and eclectic experience.','https://cdn0.weddingwire.com/vendor/480827/3_2/1280/jpg/1515006875-43878b5c0f751864-castle_no_logo__002__High_Def.jpeg','www.toothandnailwine.com', False, 7),
+('Adelaida', '5805 Adelaida Rd, Paso Robles, CA', '805-239-8980', '10:00 Am - 4:00 PM WED-MON', 'Adelaida Vineyards and Winery is a family-owned winery in Paso Robles, California, known for its sustainably farmed estate vineyards and premium wines, particularly Rhône and Bordeaux varietals.', 'https://www.bing.com/images/search?view=detailV2&ccid=jurCdznR&id=AC28C1CE05B5141ADBDE0446BFC8D25709D9C2EF&thid=OIP.jurCdznRJs5YHnQantGNogHaDy&mediaurl=https%3A%2F%2Fwww.adelaida.com%2Fassets%2Fimages%2Fcontentblock%2Fphotos%2FAdelaidapanophotoshopped.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.8eeac27739d126ce581e741a9ed18da2%3Frik%3D78LZCVfSyL9GBA%26pid%3DImgRaw%26r%3D0&exph=1126&expw=2200&q=adelaida+vineyards+%26+winery&simid=608007665894910714&FORM=IRPRST&ck=053C1D4EF6455CB9549F193E818354F4&selectedIndex=0&itb=0&cw=533&ch=682&ajaxhist=0&ajaxserp=0', 'www.adelaida.com', False, 1  )
 ('Booker', '2640 Anderson Rd, Paso Robles, CA', '805-237-7367', '10:00 AM- 4:00 PM', 'Booker Vineyard, situated in Paso Robles, California, is renowned for its high-quality, limited-production wines made from estate-grown Rhône varietals, with a focus on sustainable farming and minimalist winemaking practices.', 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/79/a6/6e/main-tasting-room.jpg?w=1200&h=-1&s=1', 'www.bookerwines.com', True, 7),
 
       ('Niner', '2400 CA-46, Paso Robles, CA','805-239-2233','10:00 AM - 5:00 PM', 'Niner Wine Estates in Paso Robles is a family-owned winery known for its estate-grown wines, stunning Heart Hill Vineyard, and commitment to sustainable farming practices.', 'https://th.bing.com/th/id/OLC.lzBvUs9Q7E5rmQ480x360?&rs=1&pid=ImgDetMain','https://www.ninerwine.com', False, 7),
@@ -233,7 +234,8 @@ phone VARCHAR);
  
 INSERT INTO restaurants(name, description, address, hours, phone)
 VALUES
-('Les Petites Canailles', 'Fine Dining Modern French', '1215 Spring Street, Paso Robles, CA, 93446', '2:00 PM- 10:00PM TR-M', '805-296-3754');
+('Les Petites Canailles', 'Fine Dining Modern French', '1215 Spring Street, Paso Robles, CA 93446', '2:00 PM- 10:00PM TR-M', '805-296-3754'),
+('McPhees Grill', 'Steakhouse, Seafood, and Pasta Cuisine', '416 S Main St, Templeton, CA 93465', 5:00 PM- 9:00 PM Wed-Sun, '805-434-3204' );
 
 CREATE TABLE enhancements(
 id SERIAL PRIMARY KEY,
